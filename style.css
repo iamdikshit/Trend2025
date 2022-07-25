@@ -1,0 +1,192 @@
+/*
+  General Settings
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/*
+=================================
+  Container Settings
+===============================  
+*/
+.container {
+  max-width: 1200px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+/* ******************* */
+/*  Nav Bar  */
+/* ******************* */
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+}
+
+.navbar-container div img {
+  width: 100px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.list-item {
+  list-style: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+.list-item:hover {
+  font-size: 18px;
+  transform: translateY(-0.5px);
+  border-bottom: 4px solid #000;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+}
+
+.nav-button {
+  width: 150px;
+  height: 30px;
+  font-size: 18px;
+  padding: 5px 16px 5px 16px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.search-icon,
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ************************** */
+/*  HERO SECTION */
+/* *************************** */
+.hero-container {
+  display: flex;
+  position: relative;
+  margin-top: 50px;
+}
+
+.hero-container-right {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 100px;
+}
+
+.hero-heading {
+  position: relative;
+  margin-top: 100px;
+  color: #000;
+  font-size: 44px;
+  text-align: center;
+}
+.hero-description {
+  text-align: center;
+  padding: 0 50px 0 50px;
+  font-size: 14px;
+}
+
+.button-email,
+.button-join {
+  margin-top: 50px;
+  font-size: 14px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.button-email {
+  padding: 2px 18px 2px 18px;
+  border: 2px solid #000;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.button-join {
+  padding: 2px 8px 2px 8px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  text-transform: capitalize;
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-heading {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.hero-container div img {
+  width: 380px;
+}
+.square img {
+  position: absolute;
+  width: 280px;
+  top: 240px;
+  left: 160px;
+  z-index: -1;
+}
+
+.star img {
+  position: absolute;
+  top: 450px;
+  left: 480px;
+  width: 32px;
+  height: 32px;
+}
+
+.hero-heading::after {
+  position: absolute;
+  background-image: url("assets/start.png");
+  content: "";
+  display: inline-block;
+  background-size: 100% 100%;
+  width: 44px;
+  height: 44px;
+  top: -80px;
+  right: 30px;
+}
+
+.globe img {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: -35px;
+  left: 640px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.icons span img {
+  width: 28px;
+  height: 28px;
+}
